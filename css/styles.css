@@ -1,0 +1,103 @@
+:root{
+    --blanco: #ffffff;
+    --amarillo: #ebe665;
+    --amarilloSecundario: #fcf98b;
+    --amarillito: #f7f6c8;
+    --naranja: #ffc67a;
+    --naranjaOscuro: #fcae83;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Fascinate', cursive;
+    margin: 0;
+    background-image: linear-gradient(to bottom, var(--naranja) 0%, var(--blanco) 100%);
+    margin-bottom: 2.5rem;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+h2{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.hero{
+    background-image: url(../image/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    padding: 3rem;
+}    
+
+.contenido-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.canciones{
+    padding: 1.5rem;
+    background-color: var(--amarilloSecundario);
+    border-radius: 2rem;
+    margin: 2.5rem;
+    text-align: center;
+    -webkit-box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+    -moz-box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+    box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+}
+
+.audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--naranjaOscuro);
+    border-radius: 2rem;
+    margin: 2.5rem;
+    -webkit-box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+    -moz-box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+    box-shadow: 4px 7px 20px -10px rgba(0,0,0,0.61);
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        flex-direction: column;
+    }
+}
